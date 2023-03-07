@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Booking</title>
+    <!-- ...normalize css... -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!-- ...custom css... -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body id="body">
+    <div class="movie">
+      <div class="container-movie">
+        <label for="movie">select a movie</label>:
+        <select id="movie-selection" class="movie-selection">
+          <option value="0">pick a movie</option>
+          <option value="100">avatar 2 (price: ₹100)</option>
+          <option value="200">spider man price: ₹200</option>
+          <option value="300">avengers endgame price: ₹300</option>
+          <option value="400">doctor strange price: ₹400</option>
+        </select>
+      </div>
+      <ul class="info-container">
+        <li class="info-items">
+          <div class="seat"></div>
+          <small>N/A</small>
+        </li>
+        <li class="info-items">
+          <div class="seat selected"></div>
+          <small>selected</small>
+        </li>
+        <li class="info-items">
+          <div class="seat occupied"></div>
+          <small>occupied</small>
+        </li>
+      </ul>
+      <div class="screen-container">
+        <div class="screen"></div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+      </div>
+      <div class="message">
+        <p class="message">
+          you are selected <span class="seats" id="seats">13</span> for price: ₹
+          <span id="total" class="total">20</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- ...script... -->
+    <script src="./script/app.js"></script>
+  </body>
+</html>
