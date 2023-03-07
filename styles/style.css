@@ -40,9 +40,10 @@ img {
 }
 
 body {
+  /* background: linear-gradient(45deg, #754fdf, #4f65df, #0e0b66);
+  background-size: cover; */
+  background-image: url(../assets/avatar.jpg);
   font-family: "Open Sans", sans-serif;
-  background: linear-gradient(45deg, #754fdf, #4f65df, #0e0b66);
-  background-size: cover;
   height: 100vh;
   width: 100vw;
   display: flex;
