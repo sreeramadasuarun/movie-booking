@@ -5,9 +5,9 @@
   --cr--white: #ffffff;
   --cr--bg-color: #f2e3ac;
   --cr--red: rgb(255, 32, 80);
-  --cr--black: rgba(0, 0, 0, 0.74);
-  --cr--blue: rgb(2, 48, 163);
-  --cr--seat: rgb(83, 83, 83);
+  --cr--black: rgba(0, 0, 0, 0.733);
+  --cr--blue: rgba(208, 255, 0, 0.171);
+  --cr--seat: rgba(78, 78, 78, 0.288);
   --cr--green: rgb(0, 203, 0);
 
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -54,7 +54,6 @@ body {
   gap: 2rem;
   background-color: var(--cr--black);
   max-width: 42rem;
-
   padding: 2rem 2rem;
   display: flex;
   flex-direction: column;
@@ -67,7 +66,7 @@ body {
   padding: 0.4rem 2rem;
   background-color: var(--cr--blue);
   gap: 5rem;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
 }
 
 .info-items {
@@ -75,14 +74,20 @@ body {
   align-items: center;
   gap: 0.3rem;
 }
-
-.screen {
-  border-top: 30px solid var(--cr--white);
-  border-left: 45px solid transparent;
-  border-right: 45px solid transparent;
-  width: 325px;
+.screen-container {
+  perspective: 500px;
 }
-
+.screen {
+  background: #e9e7e7;
+  height: 50px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0px 10px 20px 5px rgba(255, 255, 255, 0.253);
+}
+.screen {
+  margin: 2rem auto;
+}
 .seats,
 .total {
   color: var(--cr--gold);
@@ -97,6 +102,7 @@ body {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   cursor: pointer;
+  border: 1px solid black;
 }
 .seat:not(.seat.occupied):hover {
   box-shadow: 0px 0px 10px 1px rgba(5, 250, 107, 0.589);
@@ -105,10 +111,6 @@ body {
 .row {
   display: flex;
   justify-content: center;
-}
-
-.screen {
-  margin: 2rem auto;
 }
 
 .row.seat {
@@ -130,4 +132,17 @@ body {
   .movie {
     padding: 2rem 0rem;
   }
+}
+.movie-selection {
+  padding: 1rem 1rem;
+  margin-top: -1rem;
+  border-radius: 0.5rem;
+  background-color: #f5171738;
+  color: var(--cr--white);
+}
+label {
+  letter-spacing: 0.4rem;
+}
+option {
+  background-color: #000000;
 }

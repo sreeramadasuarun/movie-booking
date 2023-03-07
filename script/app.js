@@ -23,7 +23,7 @@ movieEl.addEventListener("change", function () {
   updatemessage();
 
   if (movieEl.value == 100) {
-    body.style.backgroundImage = "url(https://i.ibb.co/ccnPwDd/avatar.jpg)";
+    body.style.backgroundImage = "url(https://i.ibb.co/1G9md7T/avatar.jpg)";
   } else if (movieEl.value == 200) {
     body.style.backgroundImage = "url(https://i.ibb.co/Gt4M9cY/sp.jpg)";
   } else if (movieEl.value == 300) {
@@ -51,8 +51,6 @@ seats.forEach((item) => {
   });
   seatcount = document.querySelectorAll(".row.seat.selected").length;
   seatscountEl.innerText = seatcount;
-  price = Number(movieEl.value);
-  total = seatcount * price;
   totalEl.innerText = total;
   console.log(total);
 });
