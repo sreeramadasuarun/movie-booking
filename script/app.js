@@ -23,14 +23,13 @@ movieEl.addEventListener("change", function () {
   updatemessage();
 
   if (movieEl.value == 100) {
-    body.style.backgroundImage = "url(../assets/avatar.jpg)";
+    body.style.backgroundImage = "url(https://i.ibb.co/ccnPwDd/avatar.jpg)";
   } else if (movieEl.value == 200) {
-    body.style.backgroundImage = "url(sp.jpg)";
+    body.style.backgroundImage = "url(https://i.ibb.co/Gt4M9cY/sp.jpg)";
   } else if (movieEl.value == 300) {
-    body.style.backgroundImage = url("../assets/av.jpg");
+    body.style.backgroundImage = "url(https://i.ibb.co/M2g6nvq/av.jpg)";
   } else if (movieEl.value == 400) {
-    body.style.backgroundImage =
-      "url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg)";
+    body.style.backgroundImage = "url(https://i.ibb.co/3yCM3fK/1213553.jpg)";
   } else {
     body.style.backgroundColor = "rgb(92, 43, 226)";
   }
