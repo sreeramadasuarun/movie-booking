@@ -23,13 +23,13 @@ movieEl.addEventListener("change", function () {
   updatemessage();
 
   if (movieEl.value == 100) {
-    body.style.backgroundImage = "url('../assets/avatar.jpg')";
+    body.style.backgroundImage = "url(../assets/avatar.jpg)";
   } else if (movieEl.value == 200) {
-    body.style.backgroundImage = "url('../assets/sp.jpg')";
+    body.style.backgroundImage = "url(../assets/sp.jpg)";
   } else if (movieEl.value == 300) {
-    body.style.backgroundImage = "url('../assets/av.jpg')";
+    body.style.backgroundImage = "url(../assets/av.jpg)";
   } else if (movieEl.value == 400) {
-    body.style.backgroundImage = "url('../assets/do.webp')";
+    body.style.backgroundImage = "url(../assets/do.webp)";
   } else {
     body.style.backgroundColor = "rgb(92, 43, 226)";
   }
