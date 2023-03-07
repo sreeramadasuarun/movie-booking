@@ -31,7 +31,7 @@ a {
 }
 
 html {
-  font-size: 15px;
+  font-size: 12px;
 }
 
 img {
@@ -41,15 +41,10 @@ img {
 
 body {
   font-family: "Open Sans", sans-serif;
-
-  background-image: linear-gradient(
-    45deg,
-    rgb(13, 2, 75),
-    rgba(3, 34, 66, 0.75)
-  );
+  background: linear-gradient(45deg, #754fdf, #4f65df, #0e0b66);
   background-size: cover;
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,7 +54,8 @@ body {
 .movie {
   gap: 2rem;
   background-color: var(--cr--black);
-  padding: 2rem 3rem;
+  max-width: 42rem;
+  padding: 2rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,9 +98,13 @@ body {
   border-top-left-radius: 20px;
   cursor: pointer;
 }
+.seat:not(.seat.occupied):hover {
+  box-shadow: 0px 0px 10px 1px rgba(5, 250, 107, 0.589);
+}
 
 .row {
   display: flex;
+  justify-content: center;
 }
 
 .screen {
@@ -125,4 +125,9 @@ body {
 }
 .message {
   font-size: 1.4rem;
+}
+@media only screen and (max-width: 500px) {
+  .movie {
+    padding: 2rem 0rem;
+  }
 }
